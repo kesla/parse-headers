@@ -1,6 +1,6 @@
 {
   "name": "parse-headers",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Parse http headers, works with browserify/xhr",
   "main": "xhr-headers.js",
   "scripts": {
