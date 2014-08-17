@@ -2,7 +2,7 @@
   "name": "parse-headers",
   "version": "1.0.0",
   "description": "Parse http headers, works with browserify/xhr",
-  "main": "xhr-headers.js",
+  "main": "parse-headers.js",
   "scripts": {
     "test": "zuul test.js"
   },
@@ -11,9 +11,9 @@
     "url": "https://github.com/kesla/parse-headers.git"
   },
   "keywords": [
-    "xhr",
     "http",
-    "headers"
+    "headers",
+    "browserify"
   ],
   "author": "David Björklund <david.bjorklund@gmail.com> (http://davidbjorklund.com/)",
   "license": "MIT",
