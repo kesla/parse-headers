@@ -1,9 +1,11 @@
 var parse = require('./parse-headers')
 
   , headers = [
-        'Date: Sun, 17 Aug 2014 16:24:52 GMT'
+        ''
+      , 'Date: Sun, 17 Aug 2014 16:24:52 GMT'
       , 'Content-Type: text/html; charset=utf-8'
       , 'Transfer-Encoding: chunked'
+      , ''
     ]
 
 require('tape')(function (t) {

@@ -8,7 +8,7 @@ module.exports = function (headers) {
   var result = {}
 
   forEach(
-      headers.split('\n')
+      trim(headers).split('\n')
     , function (row) {
         var index = row.indexOf(':')
 
