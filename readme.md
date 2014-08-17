@@ -2,16 +2,16 @@
 
 Parse http headers, works with browserify/xhr
 
-[![NPM](https://nodei.co/npm/xhr-headers.png?downloads&stars)](https://nodei.co/npm/xhr-headers/)
+[![NPM](https://nodei.co/npm/parse-headers.png?downloads&stars)](https://nodei.co/npm/parse-headers/)
 
-[![NPM](https://nodei.co/npm-dl/xhr-headers.png)](https://nodei.co/npm/xhr-headers/)
+[![NPM](https://nodei.co/npm-dl/parse-headers.png)](https://nodei.co/npm/parse-headers/)
 
 [![Sauce Test Status](https://saucelabs.com/browser-matrix/kesla-xhr-headers.svg)](https://saucelabs.com/u/kesla-xhr-headers)
 
 ## Installation
 
 ```
-npm install xhr-headers
+npm install parse-headers
 ```
 
 ## Example
@@ -19,7 +19,7 @@ npm install xhr-headers
 ### Input
 
 ```javascript
-var parse = require('./xhr-headers')
+var parse = require('./parse-headers')
 
   , headers = [
         'Date: Sun, 17 Aug 2014 16:24:52 GMT'
