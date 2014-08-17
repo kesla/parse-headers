@@ -1,4 +1,4 @@
-# parse-headers
+# parse-headers[![build status](https://secure.travis-ci.org/kesla/parse-headers.svg)](http://travis-ci.org/kesla/parse-headers)
 
 Parse http headers, works with browserify/xhr
 
