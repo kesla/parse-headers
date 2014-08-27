@@ -1,5 +1,8 @@
 var trim = require('trim')
   , forEach = require('for-each')
+  , isArray = function(arg) {
+      return Object.prototype.toString.call(arg) === '[object Array]';
+    }
 
 module.exports = function (headers) {
   if (!headers)
@@ -16,7 +19,7 @@ module.exports = function (headers) {
 
         if (typeof(result[key]) === 'undefined') {
           result[key] = value
-        } else if (Array.isArray(result[key])) {
+        } else if (isArray(result[key])) {
           result[key].push(value)
         } else {
           result[key] = [ result[key], value ]
