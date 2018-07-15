@@ -1,7 +1,3 @@
-var isArray = function(arg) {
-      return Object.prototype.toString.call(arg) === '[object Array]';
-    }
-
 module.exports = function (headers) {
   if (!headers)
     return {}
@@ -15,7 +11,7 @@ module.exports = function (headers) {
 
     if (typeof(result[key]) === 'undefined') {
       result[key] = value
-    } else if (isArray(result[key])) {
+    } else if (Array.isArray(result[key])) {
       result[key].push(value)
     } else {
       result[key] = [ result[key], value ]
