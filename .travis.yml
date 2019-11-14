@@ -1,6 +1,7 @@
 language: node_js
 node_js:
-- '4'
+- node
+- lts
 env:
   global:
   - secure: K1OWZCmO4PvDis8LANVtqSnQ1DyE0d6ikAEEVWZG5qPzT9kPxXhJPIL+SemOQ6x15ERoGKB3GnWKwRTLnxI4mS3ktEfPAGxHQOtalSKBEdV1ml2n8ZmX9NZMl/la/3l5jcRS9Iwgj1hT2GsNPC1Z51nBY+0QhmS0oCOIRl2Perk=
