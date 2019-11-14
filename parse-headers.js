@@ -1,5 +1,6 @@
-var trim = require('string.prototype.trim')
-  , forEach = require('for-each')
+var trim = function(string) {
+  return string.replace(/^\s+|\s+$/g, '');
+}
   , isArray = function(arg) {
       return Object.prototype.toString.call(arg) === '[object Array]';
     }
@@ -10,22 +11,22 @@ module.exports = function (headers) {
 
   var result = {}
 
-  forEach(
-      trim(headers).split('\n')
-    , function (row) {
-        var index = row.indexOf(':')
-          , key = trim(row.slice(0, index)).toLowerCase()
-          , value = trim(row.slice(index + 1))
+  var headersArr = trim(headers).split('\n')
 
-        if (typeof(result[key]) === 'undefined') {
-          result[key] = value
-        } else if (isArray(result[key])) {
-          result[key].push(value)
-        } else {
-          result[key] = [ result[key], value ]
-        }
-      }
-  )
+  for (var i = 0; i < headersArr.length; i++) {
+    var row = headersArr[i]
+    var index = row.indexOf(':')
+    , key = trim(row.slice(0, index)).toLowerCase()
+    , value = trim(row.slice(index + 1))
+
+    if (typeof(result[key]) === 'undefined') {
+      result[key] = value
+    } else if (isArray(result[key])) {
+      result[key].push(value)
+    } else {
+      result[key] = [ result[key], value ]
+    }
+  }
 
   return result
 }
