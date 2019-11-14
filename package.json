@@ -4,7 +4,7 @@
   "description": "Parse http headers, works with browserify/xhr",
   "main": "parse-headers.js",
   "scripts": {
-    "test": "zuul test.js"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -12,18 +12,16 @@
   },
   "keywords": [
     "http",
-    "headers",
-    "browserify"
+    "headers"
   ],
-  "author": "David Björklund <david.bjorklund@gmail.com> (http://davidbjorklund.com/)",
+  "author": "David Björklund <david.bjorklund@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kesla/parse-headers/issues"
   },
   "homepage": "https://github.com/kesla/parse-headers",
   "devDependencies": {
-    "tape": "^4.10.1",
-    "zuul": "^3.7.2"
+    "tape": "^4.10.1"
   },
   "dependencies": {}
 }
