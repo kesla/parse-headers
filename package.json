@@ -25,8 +25,5 @@
     "tape": "^4.10.1",
     "zuul": "^3.7.2"
   },
-  "dependencies": {
-    "for-each": "^0.3.3",
-    "string.prototype.trim": "^1.1.2"
-  }
+  "dependencies": {}
 }
